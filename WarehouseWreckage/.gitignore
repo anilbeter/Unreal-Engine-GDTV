@@ -1,0 +1,15 @@
+Config/
+DerivedDataCache/
+Intermediate/
+Saved/
+*.uproject
+Content/Collections
+Content/Developers
+Content/StarterContent/Architecture/
+Content/StarterContent/Audio/*.uasset
+Content/StarterContent/HDRI/
+Content/StarterContent/Materials/
+Content/StarterContent/Particles/
+Content/StarterContent/Textures/
+Content/StarterContent/Shapes/
+Content/StarterContent/Props/
