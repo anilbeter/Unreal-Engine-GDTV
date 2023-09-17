@@ -1,1 +1,3 @@
 I could use Get Actor Rotation instead of Get Control Rotation. But Get Actor Rotation node doesn't reflect player camera movements at all, it has set in stone default value for rotation and won't change. With Get Control Rotation, the rotation changes with my mouse movements
+
+Branch -> Do something or don't, based on a bool
