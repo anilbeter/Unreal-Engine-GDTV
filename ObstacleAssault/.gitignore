@@ -1,0 +1,15 @@
+Content/BlockGame/Materials
+Content/BlockGame/Sounds
+Content/BlockGame/PlayerCharacter
+Content/BlockGame/Meshes
+Content/Hour_of_Code/HDRI
+Content/Hour_of_Code/Audio
+Content/Hour_of_Code/Static_Meshes
+Content/LearningKit_Games/MaterialLibrary
+Content/LearningKit_Games/Assets
+Content/LearningKit_Robots/Audio
+Content/LearningKit_Robots/StaticMeshes
+Content/LearningKit_Robots/VFX
+Content/LearningKit_Robots/Maps_Robots
+Content/LearningKit_Robots/*.uasset
+*.uproject
