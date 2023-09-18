@@ -13,3 +13,5 @@ Content/LearningKit_Robots/VFX
 Content/LearningKit_Robots/Maps_Robots
 Content/LearningKit_Robots/*.uasset
 *.uproject
+Saved/
+Intermediate/
