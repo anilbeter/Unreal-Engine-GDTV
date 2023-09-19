@@ -25,4 +25,9 @@ public:
 
 	UPROPERTY(EditAnywhere, Category = "Moving Platform")
 	FVector PlatformVelocity = FVector(100, 0, 0);
+
+	FVector StartLocation;
+
+	UPROPERTY(VisibleAnywhere)
+	float CurrentDistance;
 };
