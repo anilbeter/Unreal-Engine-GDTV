@@ -35,7 +35,10 @@ void AMovingPlatform::Tick(float DeltaTime)
 	// 	-Reverse direction of motion if gone too far
 	if (PlatformDistanceToStart > MoveDistance)
 	{
+		FVector MoveDirection = PlatformVelocity.GetSafeNormal();
+		// GetSafeNormal() -> just like i, j or k unit vectors. Have same direction but thedifferent is I set magnitude to 1 by GetSafeNormal() (birim vektör)
+		StartLocation = StartLocation + MoveDirection * MoveDistance;
+		SetActorLocation(StartLocation);
 		PlatformVelocity = -PlatformVelocity;
-		StartLocation = CurrentLocation;
 	}
 }
