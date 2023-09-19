@@ -22,11 +22,4 @@ protected:
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	UPROPERTY(EditAnywhere)
-	FVector MyVector = FVector(1, 2, 3);
-	// 1, 2, 3 are default values for x, y, z
-
-	UPROPERTY(EditAnywhere)
-	float MyX = 0;
 };
