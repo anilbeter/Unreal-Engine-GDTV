@@ -55,6 +55,10 @@ void AMovingPlatform::RotatePlatform(float DeltaTime)
 
 bool AMovingPlatform::ShouldPlatformReturn()
 {
-	float PlatformDistanceToStart = FVector::Distance(StartLocation, GetActorLocation());
-	return PlatformDistanceToStart > MoveDistance;
+	return GetDistanceMoved() > MoveDistance;
+}
+
+float AMovingPlatform::GetDistanceMoved()
+{
+	return FVector::Dist(StartLocation, GetActorLocation());
 }
