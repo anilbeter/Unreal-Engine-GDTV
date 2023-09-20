@@ -16,8 +16,9 @@ void AMovingPlatform::BeginPlay()
 
 	StartLocation = GetActorLocation();
 
-	UE_LOG(LogTemp, Display, TEXT("Hello World!"));
-	UE_LOG(LogTemp, Display, TEXT("Configured move distance: %f"), MoveDistance);
+	FString Name = GetName();
+
+	UE_LOG(LogTemp, Display, TEXT("Begin Play: %s"), *Name);
 }
 
 // Called every frame
@@ -39,7 +40,8 @@ void AMovingPlatform::Tick(float DeltaTime)
 	if (PlatformDistanceToStart > MoveDistance)
 	{
 		float OverShoot = PlatformDistanceToStart - MoveDistance;
-		UE_LOG(LogTemp, Display, TEXT("Total overshoot is: %f"), OverShoot);
+		FString Name = GetName();
+		UE_LOG(LogTemp, Display, TEXT("%s Total overshoot is: %f"), *Name, OverShoot);
 		FVector MoveDirection = PlatformVelocity.GetSafeNormal();
 		// GetSafeNormal() -> just like i, j or k unit vectors. Have same direction but thedifferent is I set magnitude to 1 by GetSafeNormal() (birim vektör)
 		StartLocation = StartLocation + MoveDirection * MoveDistance;
