@@ -30,5 +30,5 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Moving Platform")
 	float MoveDistance = 100;
 
-	void MovePlatform();
+	void MovePlatform(float DeltaTime);
 };
