@@ -27,6 +27,7 @@ void AMovingPlatform::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	MovePlatform(DeltaTime);
+	RotatePlatform(DeltaTime);
 }
 
 void AMovingPlatform::MovePlatform(float DeltaTime)
@@ -40,11 +41,16 @@ void AMovingPlatform::MovePlatform(float DeltaTime)
 	{
 		float OverShoot = PlatformDistanceToStart - MoveDistance;
 		FString Name = GetName();
-		UE_LOG(LogTemp, Display, TEXT("%s Total overshoot is: %f"), *Name, OverShoot);
+		// UE_LOG(LogTemp, Display, TEXT("%s Total overshoot is: %f"), *Name, OverShoot);
 		FVector MoveDirection = PlatformVelocity.GetSafeNormal();
 		// GetSafeNormal() -> just like i, j or k unit vectors. Have same direction but thedifferent is I set magnitude to 1 by GetSafeNormal() (birim vektör)
 		StartLocation = StartLocation + MoveDirection * MoveDistance;
 		SetActorLocation(StartLocation);
 		PlatformVelocity = -PlatformVelocity;
 	}
+}
+
+void AMovingPlatform::RotatePlatform(float DeltaTime)
+{
+	UE_LOG(LogTemp, Display, TEXT("%s rotating right now!"), *GetName());
 }

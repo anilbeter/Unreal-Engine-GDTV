@@ -31,4 +31,5 @@ private:
 	float MoveDistance = 100;
 
 	void MovePlatform(float DeltaTime);
+	void RotatePlatform(float DeltaTime);
 };
