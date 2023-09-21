@@ -11,6 +11,6 @@ _9/15/23_
 
 ## Progress
 
-<img src = "ObstacleAssault/Progress/CharacterCollision.png">
-<img src = "ObstacleAssault/Progress/ObstacleParkour.png">
-<img src = "ObstacleAssault/Progress/VSCode.png">
+<img src = "Progress/CharacterCollision.png">
+<img src = "Progress/ObstacleParkour.png">
+<img src = "Progress/VSCode.png">
